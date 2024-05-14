@@ -1,0 +1,9 @@
+body{
+    background-image: url(../image/2222.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-header-div{
+    background-color: rgba(28, 140, 238, 0.363);
+   
+}
