@@ -18,30 +18,7 @@ window.addEventListener('load', () => {
 
 const refreshEmployeeTable = () => {
 
-    /* employees = [{
-         id: 1, fullName: 'Hairtha Pramodha', nic: '920313523V',
-         mobile: '0763704119', email: 'haritha@gmail.com',
-         employeeStatus_id: { id: 1, name: 'Working' }, designation_id: { id: 1, name: 'Manager' } , hasUserAccount : true
-     },
- 
-     {
-         id: 2, fullName: 'Nuwan Bandara', nic: '952313523V', mobile: '0752704119',
-         email: 'Nuwan@gmail.com', employeeStatus_id: { id: 2, name: 'Resign' }, designation_id: { id: 2, name: 'Cashier' } , hasUserAccount : false
-     },
- 
-     {
-         id: 3, fullName: 'Isuru Viraitha', nic: '931313523V', mobile: '0712704119',
-         email: 'Isuru@gmail.com', employeeStatus_id: { id: 3, name: 'Delete' }, designation_id: { id: 3, name: 'Store-Manager' } , hasUserAccount : true
-     },
- 
-     {
-         id: 4, fullName: 'Sashini Sithara', nic: '975313523V', mobile: '0713704119',
-         email: 'Sashini@gmail.com', employeeStatus_id: { id: 1, name: 'Working' },designation_id: { id: 2, name: 'Cashier' } , hasUserAccount : true
-     }
- 
- 
-     ];
-     */
+
 
     employees = [];
 
@@ -96,7 +73,7 @@ const getEmployeeStatus = (ob) => {
         return '<p  class="status-resign">' + ob.employeestatus_id.name + '</p>'
     }
 
-    if (ob.employeestatus_id.name == 'Delete') {
+    if (ob.employeestatus_id.name == 'Deleted') {
         return '<p  class="status-delete">' + ob.employeestatus_id.name + '</p>'
     } else {
         return '<p  class="status-other">' + ob.employeestatus_id.name + '</p>'

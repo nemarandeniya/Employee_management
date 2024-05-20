@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 
 const refreshEmployeeTable = () => {
 
-    
+
 
     employees = [];
 
@@ -73,7 +73,7 @@ const getEmployeeStatus = (ob) => {
         return '<p  class="status-resign">' + ob.employeestatus_id.name + '</p>'
     }
 
-    if (ob.employeestatus_id.name == 'Delete') {
+    if (ob.employeestatus_id.name == 'Deleted') {
         return '<p  class="status-delete">' + ob.employeestatus_id.name + '</p>'
     } else {
         return '<p  class="status-other">' + ob.employeestatus_id.name + '</p>'
